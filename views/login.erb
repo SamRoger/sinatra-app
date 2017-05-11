@@ -1,0 +1,16 @@
+
+
+
+<form method="GET" action="/login">
+	<label>Email</label>
+	<input type="text" name="email" autofocus>
+	<label>Password</label>
+	<input type="text" name="password">
+	<input type="submit">
+</form>
+
+ <% if "#{flash[:notice]}"  %>
+
+<div><%= "#{flash[:notice]}" %> </div>
+
+<% end %>
